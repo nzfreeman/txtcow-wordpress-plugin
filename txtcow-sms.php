@@ -8,7 +8,7 @@
  * Author URI: https://txtcow.com
  * License: GPL v2 or later
  * Text Domain: txtcow-sms
- * Update URI: https://txtcow.com/downloads/txtcow-wordpress-plugin.json
+ * Update URI: https://github.com/nzfreeman/txtcow-wordpress-plugin
  * Requires at least: 5.0
  * Requires PHP: 7.2
  * WC requires at least: 3.0
@@ -30,13 +30,15 @@ add_action('before_woocommerce_init', function () {
     }
 });
 
-// Public plugin update metadata (Plugin Update Checker)
+// GitHub updates (Plugin Update Checker)
 require_once plugin_dir_path(__FILE__) . 'plugin-update-checker/plugin-update-checker.php';
 $txtcow_update_checker = YahnisElsts\PluginUpdateChecker\v5\PucFactory::buildUpdateChecker(
-    'https://txtcow.com/downloads/txtcow-wordpress-plugin.json',
+    'https://github.com/nzfreeman/txtcow-wordpress-plugin/',
     __FILE__,
     'txtcow-sms'
 );
+$txtcow_update_checker->setBranch('main');
+$txtcow_update_checker->getVcsApi()->enableReleaseAssets();
 
 // 플러그인 상수 정의
 define('TXTCOW_VERSION', '1.1.3');
