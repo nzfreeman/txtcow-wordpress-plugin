@@ -1,172 +1,119 @@
-# TxtCow SMS Gateway - WordPress 플러그인
+# TxtCow SMS Gateway
 
-WooCommerce 쇼핑몰에서 TxtCow를 통해 고객에게 자동으로 SMS 알림을 전송하는 WordPress 플러그인입니다.
+WordPress plugin for WooCommerce stores that use TxtCow to send order SMS notifications.
 
-## 기능
+## English
 
-- **자동 SMS 전송**: 주문 접수, 완료, 취소 시 자동으로 SMS 전송
-- **맞춤 메시지**: 주문 상태별로 메시지 템플릿 설정 가능
-- **변수 지원**: `{order_number}`, `{customer_name}`, `{total}` 변수 사용 가능
-- **테스트 기능**: 설정 페이지에서 테스트 SMS 전송 가능
-- **선택적 알림**: 원하는 주문 상태에만 SMS 전송 설정
-- **주문 노트**: 각 주문에 SMS 전송 내역 기록
+### What it does
 
-## 설치 방법
+- Sends SMS when orders are received, completed, or cancelled
+- Lets you customize message templates per order status
+- Supports variables like `{order_number}`, `{customer_name}`, and `{total}`
+- Records delivery results in WooCommerce order notes
+- Includes a built-in test SMS flow and connection status panel
+- Supports English and Korean dashboard text
 
-### 1. 플러그인 파일 업로드
+### Why TxtCow
 
-#### FTP 사용 시:
-1. `txtcow-sms` 폴더 전체를 WordPress 설치 폴더의 `wp-content/plugins/` 디렉토리에 업로드합니다.
-   ```
-   /wp-content/plugins/txtcow-sms/
-   ```
+TxtCow keeps SMS delivery tied to your own connected Android device instead of a generic gateway account. That gives you:
 
-#### WordPress 관리자 페이지 사용 시:
-1. `txtcow-sms` 폴더를 ZIP 파일로 압축합니다.
-2. WordPress 관리자 페이지에서 **플러그인 → 새로 추가 → 플러그인 업로드**를 클릭합니다.
-3. ZIP 파일을 선택하고 **지금 설치**를 클릭합니다.
+- Better control over message sending
+- Centralized opt-out handling
+- QR-based quick device pairing
+- Store-level delivery logs and connection visibility
+- A setup that fits WooCommerce stores that already run operations through TxtCow
 
-### 2. 플러그인 활성화
+### Requirements
 
-1. WordPress 관리자 페이지에서 **플러그인** 메뉴로 이동합니다.
-2. **TxtCow SMS Gateway**를 찾아 **활성화**를 클릭합니다.
+- WordPress 5.0+
+- WooCommerce 3.0+
+- PHP 7.2+
+- A TxtCow account, dashboard access, and at least one connected TxtCow Android device
 
-### 3. API 키 설정
+### Install
 
-1. TxtCow 웹사이트에 로그인합니다: https://txtcow.com
-2. **Dashboard → Integrations → New Integration**을 클릭합니다.
-3. Integration을 생성하고 표시되는 **API 키**를 복사합니다.
-   - ⚠️ **중요**: API 키는 생성 시 한 번만 표시됩니다. 안전한 곳에 보관하세요!
+1. Install and sign in to TxtCow first at [txtcow.com](https://txtcow.com).
+2. In TxtCow, connect your Android device and create an API key from **Dashboard -> Integrations**.
+3. Upload the `txtcow-sms` folder to `wp-content/plugins/`, or upload the ZIP in WordPress admin.
+4. Activate **TxtCow SMS Gateway** in WordPress.
+5. Open **Settings -> TxtCow SMS** and paste your TxtCow API key.
+6. Configure the notification options and save.
 
-4. WordPress 관리자 페이지에서 **설정 → TxtCow SMS**로 이동합니다.
-5. **API 키** 필드에 복사한 키를 붙여넣고 **설정 저장**을 클릭합니다.
+### Use
 
-## 사용 방법
+1. Enable the order statuses you want to notify.
+2. Edit the message templates if needed.
+3. Use the test SMS tab to verify delivery.
+4. Check the connection status and order notes if something is not delivered.
 
-### 기본 설정
+### Practical benefits
 
-#### 1. API 설정 탭
+- No manual SMS sending for common WooCommerce events
+- Less switching between WordPress and your phone
+- Clear delivery traces for each order
+- Easier customer communication in both Korean and English stores
 
-- **API 키**: TxtCow에서 발급받은 API 키 입력
-- **알림 활성화**:
-  - ✅ **주문 접수 (Processing)**: 주문이 접수되면 SMS 전송
-  - ☐ **주문 완료 (Completed)**: 주문이 완료되면 SMS 전송
-  - ☐ **주문 취소 (Cancelled)**: 주문이 취소되면 SMS 전송
+### Support
 
-#### 2. 메시지 설정 탭
+- TxtCow: [txtcow.com](https://txtcow.com)
+- GitHub: [nzfreeman/txtcow-wordpress-plugin](https://github.com/nzfreeman/txtcow-wordpress-plugin)
 
-메시지에 사용할 수 있는 변수:
-- `{order_number}`: 주문 번호
-- `{customer_name}`: 고객 이름
-- `{total}`: 주문 총액
+## 한국어
 
-**기본 메시지 템플릿**:
-```
-주문 접수: 주문이 접수되었습니다. 주문번호: {order_number}
-주문 완료: 주문이 완료되었습니다. 주문번호: {order_number}
-주문 취소: 주문이 취소되었습니다. 주문번호: {order_number}
-```
+### 이 플러그인은
 
-**커스텀 메시지 예제**:
-```
-{customer_name}님, 주문이 접수되었습니다!
-주문번호: {order_number}
-결제금액: {total}
-감사합니다.
-```
+WooCommerce 쇼핑몰에서 TxtCow를 사용해 주문 알림 SMS를 자동으로 보내는 WordPress 플러그인입니다.
 
-#### 3. 테스트 SMS 탭
+### 주요 기능
 
-설정이 제대로 작동하는지 확인하기 위해 테스트 SMS를 전송할 수 있습니다.
+- 주문 접수, 완료, 취소 시 자동 SMS 전송
+- 주문 상태별 메시지 템플릿 수정 가능
+- `{order_number}`, `{customer_name}`, `{total}` 같은 변수 지원
+- 전송 결과를 WooCommerce 주문 노트에 기록
+- 테스트 SMS 전송과 연결 상태 확인 화면 제공
+- 관리자 화면 영어/한국어 표시 지원
 
-1. **전화번호**: SMS를 받을 전화번호 입력 (예: 010-1234-5678)
-2. **메시지**: 테스트 메시지 입력
-3. **테스트 SMS 전송** 버튼 클릭
+### TxtCow를 함께 써야 하는 이유
 
-## 작동 방식
+이 플러그인은 TxtCow와 함께 써야 제대로 동작합니다. TxtCow는 단순한 발송 연결이 아니라, 실제 SMS 전송을 사용자의 연결된 Android 디바이스에 맡기기 때문에 운영 제어가 쉽습니다.
 
-1. 고객이 WooCommerce 쇼핑몰에서 주문을 완료합니다.
-2. 주문 상태가 변경될 때 (예: Processing, Completed, Cancelled)
-3. 플러그인이 자동으로 TxtCow API를 통해 SMS를 전송합니다.
-4. 연결된 안드로이드 디바이스가 실제 SMS를 발송합니다.
-5. 주문 노트에 SMS 전송 내역이 기록됩니다.
+- 발송 흐름을 직접 통제 가능
+- 수신 거부 번호를 중앙에서 관리
+- QR 코드로 빠르게 디바이스 연결
+- 스토어별 전송 로그와 연결 상태 확인 가능
+- WooCommerce 운영 흐름에 맞게 확장하기 쉬움
 
-## 주문 노트 확인
+### 설치 조건
 
-각 주문의 상세 페이지에서 SMS 전송 내역을 확인할 수 있습니다:
+- WordPress 5.0 이상
+- WooCommerce 3.0 이상
+- PHP 7.2 이상
+- TxtCow 계정, TxtCow 대시보드 접근 권한, 연결된 TxtCow Android 디바이스 1대 이상
 
-- **WooCommerce → 주문 → [특정 주문]**
-- 하단의 **주문 노트** 섹션에서 SMS 전송 성공/실패 내역 확인
+### 설치 방법
 
-예시:
-```
-TxtCow SMS 전송 성공: 010-1234-5678
-TxtCow SMS 전송 실패: HTTP 401: Unauthorized
-```
+1. 먼저 [txtcow.com](https://txtcow.com)에서 TxtCow에 로그인합니다.
+2. TxtCow에서 Android 디바이스를 연결하고 **Dashboard -> Integrations**에서 API 키를 생성합니다.
+3. `txtcow-sms` 폴더를 `wp-content/plugins/`에 업로드하거나 WordPress 관리자에서 ZIP 파일로 업로드합니다.
+4. WordPress에서 **TxtCow SMS Gateway**를 활성화합니다.
+5. **설정 -> TxtCow SMS**로 이동해 TxtCow API 키를 입력합니다.
+6. 알림 옵션을 설정하고 저장합니다.
 
-## 문제 해결
+### 사용 방법
 
-### SMS가 전송되지 않을 때
+1. 알림을 보낼 주문 상태를 선택합니다.
+2. 필요하면 메시지 템플릿을 수정합니다.
+3. 테스트 SMS 탭으로 실제 전송을 확인합니다.
+4. 연결 상태와 주문 노트를 확인해 미전송 원인을 점검합니다.
 
-1. **API 키 확인**
-   - TxtCow Dashboard에서 API 키가 활성화되어 있는지 확인
-   - WordPress 설정 페이지에 올바른 API 키가 입력되었는지 확인
+### TxtCow의 장점
 
-2. **전송 제한 확인**
-   - TxtCow Dashboard → Quota에서 전송 제한 초과 여부 확인
-   - 현재 할당량: 3/분, 30/일, 930/월
+- 주문 처리에 필요한 SMS를 수동으로 보낼 필요가 줄어듭니다
+- WordPress와 휴대폰을 오가며 작업하는 시간을 줄입니다
+- 주문별 전송 내역을 남길 수 있습니다
+- 한국어/영어 스토어 운영에 모두 맞습니다
 
-3. **디바이스 상태 확인**
-   - TxtCow Dashboard → Devices에서 안드로이드 디바이스가 온라인인지 확인
-   - 디바이스의 TxtCow 앱이 실행 중인지 확인
+### 지원
 
-4. **전화번호 형식**
-   - 국제 형식: `+8201012345678`
-   - 국내 형식: `010-1234-5678`
-   - 두 형식 모두 지원됨
-
-5. **주문 노트 확인**
-   - 주문 상세 페이지에서 오류 메시지 확인
-
-6. **WooCommerce 활성화**
-   - WooCommerce 플러그인이 활성화되어 있는지 확인
-
-### 오류 메시지
-
-| 오류 | 의미 | 해결 방법 |
-|------|------|-----------|
-| `HTTP 401: Unauthorized` | API 키가 유효하지 않음 | API 키를 다시 확인하고 재입력 |
-| `HTTP 429: Too Many Requests` | 전송 제한 초과 | TxtCow Dashboard에서 할당량 확인 |
-| `전화번호가 없습니다` | 주문에 전화번호 미입력 | 고객이 결제 시 전화번호를 입력했는지 확인 |
-| `API 키가 설정되지 않았습니다` | API 키 미설정 | 설정 페이지에서 API 키 입력 |
-
-## 시스템 요구사항
-
-- **WordPress**: 5.0 이상
-- **WooCommerce**: 3.0 이상
-- **PHP**: 7.2 이상
-- **TxtCow 계정**: https://txtcow.com
-
-## 지원
-
-문제가 발생하거나 질문이 있으시면:
-
-- **TxtCow 웹사이트**: https://txtcow.com
-- **GitHub**: https://github.com/nzfreeman/txtcow
-
-## 라이선스
-
-GPL v2 or later
-
-## 버전 정보
-
-**현재 버전**: 1.0.0
-
-### 변경 내역
-
-#### 1.0.0 (2026-01-03)
-- 최초 릴리스
-- 주문 접수/완료/취소 시 SMS 자동 전송
-- 메시지 템플릿 커스터마이징
-- 테스트 SMS 전송 기능
-- 주문 노트에 전송 내역 기록
+- TxtCow: [txtcow.com](https://txtcow.com)
+- GitHub: [nzfreeman/txtcow-wordpress-plugin](https://github.com/nzfreeman/txtcow-wordpress-plugin)
