@@ -1,11 +1,11 @@
-=== TxtCow SMS Gateway 빠른 설치 가이드 ===
+=== TxtCow SMS 빠른 설치 가이드 ===
 
 1. 플러그인 설치
    - 이 폴더(txtcow-sms) 전체를 /wp-content/plugins/ 에 업로드
    - 또는 ZIP 파일로 압축하여 WordPress 관리자에서 업로드
 
 2. 플러그인 활성화
-   - WordPress 관리자 → 플러그인 → TxtCow SMS Gateway 활성화
+   - WordPress 관리자 → 플러그인 → TxtCow SMS 활성화
 
 3. API 키 발급
    - https://txtcow.com 로그인

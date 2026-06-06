@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name: TxtCow SMS Gateway
+ * Plugin Name: TxtCow SMS
  * Plugin URI: https://txtcow.com
  * Description: WooCommerce integration for TxtCow SMS notifications
- * Version: 1.1.3
+ * Version: 1.1.4
  * Author: TxtCow
  * Author URI: https://txtcow.com
  * License: GPL v2 or later
@@ -41,7 +41,7 @@ $txtcow_update_checker->setBranch('main');
 $txtcow_update_checker->getVcsApi()->enableReleaseAssets();
 
 // 플러그인 상수 정의
-define('TXTCOW_VERSION', '1.1.3');
+define('TXTCOW_VERSION', '1.1.4');
 define('TXTCOW_LEGACY_TEST_SOURCE', 'woocommerce_admin_test');
 define('TXTCOW_API_BASE_URL', 'https://txtcow.com');
 define('TXTCOW_BLOCKLIST_OPTION', 'txtcow_blocklist_numbers');
@@ -441,7 +441,7 @@ class TxtCow_SMS_Gateway {
     public function woocommerce_missing_notice() {
         ?>
         <div class="notice notice-error">
-            <p><strong><?php esc_html_e('TxtCow SMS Gateway:', 'txtcow-sms'); ?></strong> <?php esc_html_e('WooCommerce is required to use this plugin.', 'txtcow-sms'); ?></p>
+            <p><strong><?php esc_html_e('TxtCow SMS:', 'txtcow-sms'); ?></strong> <?php esc_html_e('WooCommerce is required to use this plugin.', 'txtcow-sms'); ?></p>
         </div>
         <?php
     }
@@ -989,7 +989,7 @@ class TxtCow_SMS_Gateway {
             ?>
             <div class="notice notice-warning is-dismissible">
                 <p>
-                    <strong><?php esc_html_e( 'TxtCow SMS Gateway:', 'txtcow-sms' ); ?></strong>
+                    <strong><?php esc_html_e( 'TxtCow SMS:', 'txtcow-sms' ); ?></strong>
                     <a href="<?php echo admin_url('options-general.php?page=txtcow-sms'); ?>"><?php esc_html_e( 'API key settings', 'txtcow-sms' ); ?></a> <?php esc_html_e( 'to start sending SMS.', 'txtcow-sms' ); ?>
                 </p>
             </div>
@@ -1290,7 +1290,7 @@ class TxtCow_SMS_Gateway {
         </script>
 
         <div class="wrap">
-            <h1><?php esc_html_e( 'TxtCow SMS Gateway Settings', 'txtcow-sms' ); ?></h1>
+            <h1><?php esc_html_e( 'TxtCow SMS Settings', 'txtcow-sms' ); ?></h1>
 
             <h2 class="nav-tab-wrapper">
                 <a href="javascript:void(0);" class="nav-tab nav-tab-active" data-tab="api-settings" onclick="switchTab(event, 'api-settings')"><?php esc_html_e( 'Basic Settings', 'txtcow-sms' ); ?></a>
