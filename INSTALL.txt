@@ -1,0 +1,31 @@
+=== TxtCow SMS Gateway 빠른 설치 가이드 ===
+
+1. 플러그인 설치
+   - 이 폴더(txtcow-sms) 전체를 /wp-content/plugins/ 에 업로드
+   - 또는 ZIP 파일로 압축하여 WordPress 관리자에서 업로드
+
+2. 플러그인 활성화
+   - WordPress 관리자 → 플러그인 → TxtCow SMS Gateway 활성화
+
+3. API 키 발급
+   - https://txtcow.com 로그인
+   - Dashboard → Integrations → New Integration
+   - API 키 복사 (한 번만 표시됩니다!)
+
+4. 설정
+   - WordPress 관리자 → 설정 → TxtCow SMS
+   - API 키 입력
+   - 원하는 알림 활성화 (주문 접수/완료/취소)
+   - 설정 저장
+
+5. 테스트
+   - "테스트 SMS" 탭에서 테스트 메시지 전송
+   - 정상 작동 확인
+
+6. 완료!
+   - 이제 WooCommerce 주문 시 자동으로 SMS가 전송됩니다.
+
+문제 발생 시:
+- README.md 파일의 "문제 해결" 섹션 참고
+- TxtCow Dashboard에서 디바이스 상태 확인
+- 주문 노트에서 오류 메시지 확인

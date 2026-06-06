@@ -1,0 +1,442 @@
+# Copyright (C) 2026 TxtCow
+# This file is distributed under the same license as the TxtCow SMS Gateway plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: TxtCow SMS Gateway 1.1.3\n"
+"Report-Msgid-Bugs-To: https://github.com/nzfreeman/txtcow\n"
+"POT-Creation-Date: 2026-05-23 00:00:00+0000\n"
+"PO-Revision-Date: 2026-05-23 00:00:00+0000\n"
+"Last-Translator: TxtCow <admin@txtcow.com>\n"
+"Language-Team: TxtCow <admin@txtcow.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0\n"
+
+msgid "TxtCow SMS Gateway:"
+msgstr "TxtCow SMS Gateway:"
+
+msgid "WooCommerce is required to use this plugin."
+msgstr "WooCommerce is required to use this plugin."
+
+msgid "TxtCow SMS Settings"
+msgstr "TxtCow SMS Settings"
+
+msgid "TxtCow SMS"
+msgstr "TxtCow SMS"
+
+msgid "Phone number is missing."
+msgstr "Phone number is missing."
+
+msgid "Cannot normalize phone number."
+msgstr "Cannot normalize phone number."
+
+msgid "TxtCow SMS not sent: opt-out number (%s)"
+msgstr "TxtCow SMS not sent: opt-out number (%s)"
+
+msgid "API key is not configured."
+msgstr "API key is not configured."
+
+msgid "TxtCow SMS not sent: central blocklist (%s)"
+msgstr "TxtCow SMS not sent: central blocklist (%s)"
+
+msgid "TxtCow SMS queued: %s"
+msgstr "TxtCow SMS queued: %s"
+
+msgid "TxtCow SMS failed: %s"
+msgstr "TxtCow SMS failed: %s"
+
+msgid "[Admin Alert] New order (#%s) received. Amount: %s"
+msgstr "[Admin Alert] New order (#%s) received. Amount: %s"
+
+msgid "Settings saved!"
+msgstr "Settings saved!"
+
+msgid "Test SMS sent!"
+msgstr "Test SMS sent!"
+
+msgid "SMS send failed: %s"
+msgstr "SMS send failed: %s"
+
+msgid "Please fill in all fields."
+msgstr "Please fill in all fields."
+
+msgid "TxtCow SMS Gateway Settings"
+msgstr "TxtCow SMS Gateway Settings"
+
+msgid "Basic Settings"
+msgstr "Basic Settings"
+
+msgid "Message Settings"
+msgstr "Message Settings"
+
+msgid "Message Rules"
+msgstr "Message Rules"
+
+msgid "Delay Settings"
+msgstr "Delay Settings"
+
+msgid "Connection Status"
+msgstr "Connection Status"
+
+msgid "Delivery Logs"
+msgstr "Delivery Logs"
+
+msgid "Test SMS"
+msgstr "Test SMS"
+
+msgid "API Key"
+msgstr "API Key"
+
+msgid "Enter the API key issued in Integrations from TxtCow Dashboard."
+msgstr "Enter the API key issued in Integrations from TxtCow Dashboard."
+
+msgid "Admin Notifications"
+msgstr "Admin Notifications"
+
+msgid "Send admin SMS for new orders"
+msgstr "Send admin SMS for new orders"
+
+msgid "Receive text messages on admin phone when new orders arrive"
+msgstr "Receive text messages on admin phone when new orders arrive"
+
+msgid "Enter your phone number to stay on top of orders."
+msgstr "Enter your phone number to stay on top of orders."
+
+msgid "Admin Phone Number"
+msgstr "Admin Phone Number"
+
+msgid "Enable Customer Notifications"
+msgstr "Enable Customer Notifications"
+
+msgid "Order Received (Processing)"
+msgstr "Order Received (Processing)"
+
+msgid "Send SMS to customer when order is received"
+msgstr "Send SMS to customer when order is received"
+
+msgid "Order Completed"
+msgstr "Order Completed"
+
+msgid "Send SMS to customer when order is completed"
+msgstr "Send SMS to customer when order is completed"
+
+msgid "Order Cancelled"
+msgstr "Order Cancelled"
+
+msgid "Send SMS to customer when order is cancelled"
+msgstr "Send SMS to customer when order is cancelled"
+
+msgid "SMS Send Restrictions (Opt-out Numbers)"
+msgstr "SMS Send Restrictions (Opt-out Numbers)"
+
+msgid "Enter one phone number per line. Numbers listed here will not receive SMS in any status."
+msgstr "Enter one phone number per line. Numbers listed here will not receive SMS in any status."
+
+msgid "Open TxtCow Dashboard"
+msgstr "Open TxtCow Dashboard"
+
+msgid "✓ Automatic Opt-out Enabled!"
+msgstr "✓ Automatic Opt-out Enabled!"
+
+msgid "When customers reply with \"STOP\", \"Unsubscribe\", etc., TxtCow system automatically detects it and adds to the central blocklist."
+msgstr "When customers reply with \"STOP\", \"Unsubscribe\", etc., TxtCow system automatically detects it and adds to the central blocklist."
+
+msgid "Supported Keywords: STOP, UNSUBSCRIBE, CANCEL, END, QUIT, OPT-OUT, REMOVE"
+msgstr "Supported Keywords: STOP, UNSUBSCRIBE, CANCEL, END, QUIT, OPT-OUT, REMOVE"
+
+msgid "Manual Opt-out Numbers"
+msgstr "Manual Opt-out Numbers"
+
+msgid "Numbers you enter here will be automatically synced to TxtCow's central blocklist."
+msgstr "Numbers you enter here will be automatically synced to TxtCow's central blocklist."
+
+msgid "Save Settings"
+msgstr "Save Settings"
+
+msgid "{order_number} - Order number"
+msgstr "{order_number} - Order number"
+
+msgid "{customer_name} - Customer name"
+msgstr "{customer_name} - Customer name"
+
+msgid "{total} - Order total"
+msgstr "{total} - Order total"
+
+msgid "{items_list} - Product list (e.g., Apple x 1, Pear x 2)"
+msgstr "{items_list} - Product list (e.g., Apple x 1, Pear x 2)"
+
+msgid "{billing_address} - Billing/shipping address"
+msgstr "{billing_address} - Billing/shipping address"
+
+msgid "{tracking_number} - Tracking number"
+msgstr "{tracking_number} - Tracking number"
+
+msgid "{tracking_link} - Shipping tracking link"
+msgstr "{tracking_link} - Shipping tracking link"
+
+msgid "TxtCow SMS pending review in app: %s"
+msgstr "TxtCow SMS pending review in app: %s"
+
+msgid "API key settings"
+msgstr "API key settings"
+
+msgid "to start sending SMS."
+msgstr "to start sending SMS."
+
+msgid "Test SMS is pending review in TxtCow app. Please open the app to approve and send it."
+msgstr "Test SMS is pending review in TxtCow app. Please open the app to approve and send it."
+
+msgid "John Doe"
+msgstr "John Doe"
+
+msgid "Sample product x 1"
+msgstr "Sample product x 1"
+
+msgid "No order found. Rendering with sample values."
+msgstr "No order found. Rendering with sample values."
+
+msgid "Preview order: #%s / %s"
+msgstr "Preview order: #%s / %s"
+
+msgid "Rule %d: Template cannot be empty."
+msgstr "Rule %d: Template cannot be empty."
+
+msgid "Rule %d: Unsupported event type."
+msgstr "Rule %d: Unsupported event type."
+
+msgid "Rule %d: Minimum order amount cannot be greater than maximum order amount."
+msgstr "Rule %d: Minimum order amount cannot be greater than maximum order amount."
+
+msgid "Rule %d: Customer name regex pattern is invalid."
+msgstr "Rule %d: Customer name regex pattern is invalid."
+
+msgid "Message Rule Validation Results"
+msgstr "Message Rule Validation Results"
+
+msgid "In New Zealand, send messages only for purposes allowed by the Unsolicited Electronic Messages Act 2007, such as quote requests, existing transaction progress or confirmation, warranty, recall, safety, membership or account notices, and government or court notices. Comply with local spam and telecommunications rules in every country, do not send to numbers that opted out, and accept responsibility for all messages you send."
+msgstr "In New Zealand, send messages only for purposes allowed by the Unsolicited Electronic Messages Act 2007, such as quote requests, existing transaction progress or confirmation, warranty, recall, safety, membership or account notices, and government or court notices. Comply with local spam and telecommunications rules in every country, do not send to numbers that opted out, and accept responsibility for all messages you send."
+
+msgid "Available Variables:"
+msgstr "Available Variables:"
+
+msgid "Order Received Message"
+msgstr "Order Received Message"
+
+msgid "Order Completed Message"
+msgstr "Order Completed Message"
+
+msgid "Order Cancelled Message"
+msgstr "Order Cancelled Message"
+
+msgid "Message Preview"
+msgstr "Message Preview"
+
+msgid "Preview Order"
+msgstr "Preview Order"
+
+msgid "Leave empty to use the most recent order. If no order exists, sample values are used."
+msgstr "Leave empty to use the most recent order. If no order exists, sample values are used."
+
+msgid "Order Received"
+msgstr "Order Received"
+
+msgid "Save Messages"
+msgstr "Save Messages"
+
+msgid "Conditional Message Rules"
+msgstr "Conditional Message Rules"
+
+msgid "Rules are evaluated from top to bottom. The first matching rule is applied; if none match, the default message template is used."
+msgstr "Rules are evaluated from top to bottom. The first matching rule is applied; if none match, the default message template is used."
+
+msgid "Rule order is the priority. Place specific customer group rules above general rules."
+msgstr "Rule order is the priority. Place specific customer group rules above general rules."
+
+msgid "Priority"
+msgstr "Priority"
+
+msgid "Enabled"
+msgstr "Enabled"
+
+msgid "Rule Name"
+msgstr "Rule Name"
+
+msgid "Event"
+msgstr "Event"
+
+msgid "Country"
+msgstr "Country"
+
+msgid "Minimum Amount"
+msgstr "Minimum Amount"
+
+msgid "Maximum Amount"
+msgstr "Maximum Amount"
+
+msgid "Product Keyword"
+msgstr "Product Keyword"
+
+msgid "Customer Name Regex"
+msgstr "Customer Name Regex"
+
+msgid "Message Template"
+msgstr "Message Template"
+
+msgid "Actions"
+msgstr "Actions"
+
+msgid "e.g., VIP order"
+msgstr "e.g., VIP order"
+
+msgid "e.g., Apple"
+msgstr "e.g., Apple"
+
+msgid "e.g., ^Kim"
+msgstr "e.g., ^Kim"
+
+msgid "Move Up"
+msgstr "Move Up"
+
+msgid "Move Down"
+msgstr "Move Down"
+
+msgid "Delete"
+msgstr "Delete"
+
+msgid "Add Rule"
+msgstr "Add Rule"
+
+msgid "Advanced option: enter only the PCRE pattern body for Customer Name Regex. Examples:"
+msgstr "Advanced option: enter only the PCRE pattern body for Customer Name Regex. Examples:"
+
+msgid "Save Rules"
+msgstr "Save Rules"
+
+msgid "Message Delay Policy"
+msgstr "Message Delay Policy"
+
+msgid "Send customer and admin messages immediately or after a configured delay."
+msgstr "Send customer and admin messages immediately or after a configured delay."
+
+msgid "Delay Mode"
+msgstr "Delay Mode"
+
+msgid "Send Immediately"
+msgstr "Send Immediately"
+
+msgid "Fixed Delay"
+msgstr "Fixed Delay"
+
+msgid "Random Range Delay"
+msgstr "Random Range Delay"
+
+msgid "Delay Time (seconds)"
+msgstr "Delay Time (seconds)"
+
+msgid "Seconds to wait before sending the message."
+msgstr "Seconds to wait before sending the message."
+
+msgid "Delay Range (seconds)"
+msgstr "Delay Range (seconds)"
+
+msgid "Minimum:"
+msgstr "Minimum:"
+
+msgid "Maximum:"
+msgstr "Maximum:"
+
+msgid "A random delay is selected within the configured range."
+msgstr "A random delay is selected within the configured range."
+
+msgid "Save Delay Settings"
+msgstr "Save Delay Settings"
+
+msgid "Quick Connect (QR Code)"
+msgstr "Quick Connect (QR Code)"
+
+msgid "Scan the QR code in the mobile app to connect quickly."
+msgstr "Scan the QR code in the mobile app to connect quickly."
+
+msgid "Generating QR code..."
+msgstr "Generating QR code..."
+
+msgid "Checking status..."
+msgstr "Checking status..."
+
+msgid "Please configure the API key first."
+msgstr "Please configure the API key first."
+
+msgid "Unknown"
+msgstr "Unknown"
+
+msgid "Connected"
+msgstr "Connected"
+
+msgid "Awaiting device connection"
+msgstr "Awaiting device connection"
+
+msgid "Needs attention"
+msgstr "Needs attention"
+
+msgid "Store:"
+msgstr "Store:"
+
+msgid "Active device:"
+msgstr "Active device:"
+
+msgid "No active device connected yet."
+msgstr "No active device connected yet."
+
+msgid "Default device:"
+msgstr "Default device:"
+
+msgid "Last tested:"
+msgstr "Last tested:"
+
+msgid "Recent error:"
+msgstr "Recent error:"
+
+msgid "Delivery History"
+msgstr "Delivery History"
+
+msgid "Review recent message delivery records."
+msgstr "Review recent message delivery records."
+
+msgid "Loading logs..."
+msgstr "Loading logs..."
+
+msgid "Recipient"
+msgstr "Recipient"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Sent At"
+msgstr "Sent At"
+
+msgid "Error"
+msgstr "Error"
+
+msgid "No logs found."
+msgstr "No logs found."
+
+msgid "Showing %1 of %2 messages"
+msgstr "Showing %1 of %2 messages"
+
+msgid "Phone Number"
+msgstr "Phone Number"
+
+msgid "Enter the phone number that will receive the SMS."
+msgstr "Enter the phone number that will receive the SMS."
+
+msgid "Message"
+msgstr "Message"
+
+msgid "This is a test message."
+msgstr "This is a test message."
+
+msgid "Send Test SMS"
+msgstr "Send Test SMS"
